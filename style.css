@@ -1,33 +1,96 @@
+
+
 body {
-    border: 1px dotted black;
+    background-color: #f3dfc1;
+    display: flex;
+    flex-direction: column; 
+    align-content: center;
+
   }
+
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  color: #c53131;
+  text-shadow: 5px 0px black;
+}
+
+h2 {
+  text-shadow: 5px 0px black;
+  color: gold;
+  background-color: #c53131;
+  border: 1px solid black;
+  border-radius: 20%;
+  box-shadow: 5px 5px 0px 0px black;
+  padding: 5px 40px 40px 40px;
+  font-family: 'Bangers', cursive;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+p {
+    font-size: 1.25rem;
+    font-family: "Russo One", sans-serif;
+    line-height:35px;
+    word-spacing: 5px;
+  }
+
+
+a {
+  color: black;
+}
+
+a:hover{
+  color: DodgerBlue;
+}
+
+
+p a {
+  text-decoration: underline;
+  color:rgb(197, 0, 0);
+}
   
    /*    TITLE AND NAVIGATION  */
-  
-  #box1 {
-    border:1px solid black;
+
+#box1 {
+    border: 6px solid black;
+    background-color: #f3dfc1;
     display:grid;
-    grid-row: 75%, 25% ;
-  }
+    grid-template-rows: 75%, 25% ;
+    position: fixed;
+    top: 0px;
+    left: 1.25px;
+    margin:0px;
+    width: 99%;
+    z-index: 1;
+}  
   
-  #name {
-    border: 1px solid black;
+#name {
     display: grid;
     justify-content: center;
     grid-area: 1 / 1 / span 1 /  span 4;
-  
+    border-bottom: 6px solid black;
+  }
+
+  #name h1 {
+    text-align: center;
   }
   
-  .navi {
-    border: 1px solid black;
+.navi {
     transition: color 0.3s ease;
     display: flex;
     justify-content: center;
     text-decoration: underline;
   }
   
-  .navi:hover {
-    color: blue;
+.navi:hover {
+    color: green;
   }
   
   
@@ -35,89 +98,182 @@ body {
   /*   ABOUT ME   */
   
   
-  #aboutme {
-    border: 1px solid black;
+#aboutme {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
+    position: relative;
+    padding-top: 250px;
   }
   
   
   
-  #about {
+#about {
     text-decoration: underline;
     display: flex; 
     justify-content: center;
     
   }
   
-  #picbox{
+#picbox{
     border: 1px solid black;
+    background-color: #c53131;
+    box-shadow: 5px 5px 5px 0px black;
     display: flex;
     justify-content: center;
   }
   
-  #pic {
+#pic {
     height: 200px;
     width: 200px;
   }
   
   
-  #me {
+#me {
     max-width: 800px;
-    min-width: 300px;
+    min-width: 250px;
     font-family: 'Times New Roman';
+    display: flex;
   }
   
+
   /*   PROJECTS   */
   
-  #box3 {
+#box3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 250px;
   }
   
-  #project-head{
+#project-head{
     text-decoration: underline;
     max-width: 250px;
   }
   
-  .projectsbox {
+.projectsbox {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border:1px solid ;
   }
   
-  .title {
+.title {
     text-decoration: underline;
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
   }
   
-  .project {
+.project {
     width:100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   
-  .project img {
+.project img {
     max-height: 400px;
-    min-height: 200px;
+    min-height: 150px;
     max-width: 500px;
-    min-width: 250px;
+    min-width: 200px;
     margin-bottom: 20px;
+    border: 1px solid black;
   }
   
-  .description{
+.description{
     max-width: 500px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
   
   }
   
+
+  /*    SKILLS AND LANGUAGES    */
+
   
+#skills {
+    height: 200px;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    flex-wrap: wrap;
+    padding-top: 250px;
+  }
+
+#list {
+    width: 100%;
+    display: flex; 
+    justify-content: space-around;
+    font-weight: bold;
+    font-size:larger; 
+  }
   
+  /* Example Video */ 
+
+
+  #video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    width: 100%;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #space {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+/*  Skeuomorphic Button Example  */
+  button {
+    font-weight: 600;
+    border: 6px solid black;
+    padding: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+    border-radius: 45px;
+    font-size: 2rem;
+    box-shadow: 0px 5px 5px 0px black;
+    background-color: #fbfbfb9c;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #919191a4;
+
+  }
+
+  button:active {
+    box-shadow: 0px 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #cacacaa4;
+    color:rgba(0, 0, 0, 0.445);
+  }
+
+
+
+  /* CONTACT INFORMATION */
+
+  #contact {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+
+  .info {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin: 50px 0px;
+   }
