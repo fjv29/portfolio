@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&family=Russo+One&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div id='box1'>
       <div id='name'>
         <h1>Francisco J Vargas Personal Portfolio</h1>
       </div>
-      <div class='navi'><a href='#aboutme'>About Me</a></div>
-      <div class='navi'><a href='#box3'>Projects</a></div>
-      <div class='navi'><a href='#skills'>Skills/languages</a></div>
-      <div class='navi'><a href='#contact'>Contact Info</a></div>
+      <h3 class='navi'><a href='#aboutme'>About Me</a></h3>
+      <h3 class='navi'><a href='#box3'>Projects</a></h3>
+      <h3 class='navi'><a href='#skills'>Skills/languages</a></h3>
+      <h3 class='navi'><a href='#contact' title="Please hire me! :] ">Contact Info</a></h3>
     </div>
     <div id='aboutme'>
+      <br id="gap">
       <h2 id='about'>About Me</h2>
       <div id='picbox'>
           <img src='./images/IMG_6554.JPEG' id='pic'>
@@ -37,37 +40,42 @@
         <h3 class='title'>Build Your Own Cheat Sheet</h3>
         <div class="project">
           <img src='./images/2024-03-25.png'>
-          <p class='description'>The main aim of this project was to demonstrate proficiency in creating HTML tables.  The goal of the assignment was to develop a cheat sheet centered around a computer science topic of my preference. After careful consideration, I settled on exploring color in CSS and the various methods of color coding. To see the the full page click <a href='https://fjv29.github.io/Build-Your-Own-Cheat-Sheet/'>here.</a></p>
+          <p class='description'>The main aim of this project was to demonstrate proficiency in creating HTML tables.  The goal of the assignment was to develop a cheat sheet centered around a computer science topic of my preference. After careful consideration, I settled on exploring color in CSS and the various methods of color coding. To see the the full page click <a href='https://fjv29.github.io/Build-Your-Own-Cheat-Sheet/' title="Build Your Own Cheat Sheet">here.</a></p>
         </div>
       </div>
       <div class='projectsbox'>
-        <h3 class='title'>Project Title</h3>
+        <h3 class='title'>Website Design</h3>
         <div class="project">
-          <img src='https://cst.brightspotcdn.com/dims4/default/0aec71c/2147483647/strip/true/crop/750x500+0+40/resize/840x560!/quality/90/?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2Fgsk3R-xHs7iS6RPrg2l69mqpgoA%3D%2F0x0%3A750x580%2F750x580%2Ffilters%3Afocal%28375x290%3A376x291%29%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F16216621%2Fgorillas_CST_032212_2.jpg'>
-          <p class='description'>this is what the project is about. I am making this longer in order to see how this section would look on my portfolio website. Later on. this is what the project is about. I am making this longer in order to see how this section would look on my portfolio website. Later on. this is what the project is about. I am making this longer in order to see how this section would look on my portfolio website. Later on.</p>
+          <img src='./images/2024-03-27.png'>
+          <p class='description'>The objective of this project is to demonstrate my proficiency in CSS styling. In particular, I have acquired skills in incorporating fonts, adjusting font sizes, and establishing cohesive color schemes. The aim of this project was to develop a rudimentary design framework for a website, making it easier for me to implement consistent styling across all my future projects.To see the the full page click <a href="https://fjv29.github.io/website_design/" title="Website Design">here.</a></p>
         </div>
       </div>
     </div>
     <div id='skills'>
-      <h2>Skill Development</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>gitHub</li>
-        <li>SQL</li>
-      </ul>
+      <h2>Skills/Languages</h2>
+      <div id="list">
+        <div>HTML<img src="./images/html5.png" class='code'></div>
+        <div>CSS<img src="./images/css.png" class="code"></div>
+        <div>JavaScript<img src="./images/JavaScript-logo.png" class="code"></div>
+        <div>gitHub<img src="./images/github.png" class="code"></div>
+        <div>SQL<img src="./images/sql.png" class="code"></div>
+      </div>
+    </div>
+    <div id="video">
+      <video src="./video/Fortnite   2022-07-27 22-06-17.mp4" width="640" height="480" controls></video>
+      <div id="space">
+        <button title="This button does nothing for now.">Skeuomorphic/3D Button</button>
+      </div>
     </div>
     
     <script src="script.js"></script>
   </body>
   <footer>
     <div id='contact'>
-      <ul>
-        <li>Name:Francisco Javier Vargas</li>
-        <li>Phone: (404) 618-9333</li>
-        <li>Email:Sisco429@icloud.com</li>
-      </ul>
+      <h2>CONTACT INFORMATION</h2>
+      <div class="info">Francisco Javier Vargas</div>
+      <div class="info">Phone: (404) 618-9333</div>
+      <div class="info">Email: Sisco429@icloud.com</div>
     </div>
   </footer>
   </html>
